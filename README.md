@@ -1,44 +1,56 @@
-# pensamento_computacional_projeto-padaria
-Primeiro repositorio para práticas de vensionamento de github e prompt de comandos.
-🥖 Sistema de Vendas - Padaria Peter Pão
-Este é um projeto em Python desenvolvido para automatizar o atendimento e a gestão de pedidos de uma padaria. O programa simula desde o cadastro e login do cliente até a escolha de produtos e finalização da compra com diferentes métodos de pagamento.
+🥖 Sistema de Gerenciamento - Padaria Peter Pão
+Este é um projeto em Python desenvolvido para modernizar o atendimento da Padaria Peter Pão, permitindo que clientes visualizem o cardápio, façam pedidos personalizados e escolham a forma de entrega e pagamento de forma automatizada.
+
+O programa utiliza estruturas de dados para organizar o carrinho de compras, categorias de produtos e processamento de finalização de pedidos.
 
 🚀 Funcionalidades
-O sistema está estruturado para oferecer uma experiência completa de compra:
+O sistema está dividido em módulos principais:
 
-Login Seguro: Módulo de acesso com verificação de senha para garantir a identidade do usuário.
+Acesso e Cadastro: Sistema de login seguro e registro de dados do cliente (E-mail, CPF, Endereço).
 
-Cadastro de Clientes: Coleta de dados essenciais como e-mail, endereço, CPF/CNPJ e telefone.
+Cardápio Interativo: Navegação por categorias (Salgados, Doces, Bebidas e Promoções) com exibição de preços.
 
-Cardápio Interativo: Divisão por categorias (Salgados, Doces, Bebidas e Promoções) facilitando a navegação.
+Carrinho Dinâmico (CRUD): Adição de itens ao pedido com cálculo automático de subtotal em tempo real.
 
-Gerenciamento de Carrinho: Adição de itens com atualização automática e em tempo real do valor total acumulado.
+Logística Flexível: Opção para o cliente escolher entre Retirada no Estabelecimento ou Entrega (Delivery).
 
-Resumo e Checkout: Visualização dos itens escolhidos e suporte a múltiplos métodos de pagamento (Cartão de Débito, Crédito, Vale Alimentação e PIX).
+Multi-Pagamento: Suporte para diversas modalidades: Dinheiro, PIX, Cartão de Crédito ou Débito.
 
-Informações Locais: Acesso rápido ao endereço, horário de funcionamento e links externos da loja.
+Confirmação de Recebimento: Sistema de status que confirma quando o pedido foi enviado com sucesso para a cozinha da padaria.
 
 🛠️ Tecnologias e Estruturas Utilizadas
-O projeto foi construído utilizando lógica de programação pura em Python, focando em:
+O projeto foi construído utilizando conceitos fundamentais de Python, focando em lógica de programação pura:
 
 Listas ([]): Utilizadas para armazenar os itens do carrinho de compras durante a sessão.
 
-Dicionários ({}): Mapeamento dinâmico de códigos de produtos, nomes e preços, permitindo consultas rápidas.
+Dicionários ({}): Gestão da tabela de preços e nomes de produtos para busca rápida.
 
-Funções (def): Encapsulamento da lógica de login para maior organização do código.
+Laços de Repetição (while): Mantêm o menu interativo ativo até que o cliente decida sair.
 
-Laços de Repetição (while): Loop principal que mantém o menu ativo até que o usuário decida sair.
+Condicionais (if/elif/else): Responsáveis por toda a inteligência de navegação e validação de pagamentos.
 
-Condicionais (if/elif/else): Controle de fluxo para navegar entre as opções do menu e submenus de categorias.
+Formatação de Dados: Uso de f-strings para exibição de valores monetários corrigidos (R$).
 
 📋 Como Executar
-Certifique-se de ter o Python 3.x instalado em sua máquina.
+Certifique-se de ter o Python 3.x instalado.
 
 Salve o código em um arquivo chamado padaria_peter_pao.py.
 
-Abra o terminal ou prompt de comando na pasta onde o arquivo foi salvo.
+Abra o terminal ou prompt de comando.
 
 Execute o comando:
 
 Bash
 python padaria_peter_pao.py
+📖 Exemplo de Uso
+Ao iniciar o programa, o usuário seguirá este fluxo:
+
+Identificação: O sistema saúda o cliente pelo nome.
+
+Seleção: O cliente navega no menu "3", escolhe uma "Coxinha" e um "Suco".
+
+Revisão: No menu "4", o cliente vê a lista de itens e o total de R$ 9,00.
+
+Finalização: Escolhe "Entrega", define "PIX" como pagamento e recebe a confirmação: “O estabelecimento recebeu seu pedido!”.
+
+Desenvolvido como projeto de aprendizagem em lógica de programação com Python.
